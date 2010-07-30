@@ -30,12 +30,6 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>
-                            de.deepamehta.plugins.contacts.migrations
-                        </Export-Package>
-                        <Private-Package>
-                            de.deepamehta.plugins.contacts.*
-                        </Private-Package>
                         <Bundle-Activator>de.deepamehta.core.service.Plugin</Bundle-Activator>
                     </instructions>
                 </configuration>

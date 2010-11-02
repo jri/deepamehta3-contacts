@@ -25,7 +25,7 @@ public class Migration2 extends Migration {
     @Override
     public void run() {
         // update the indexers
-        TopicType personType = dms.getTopicType("de/deepamehta/core/topictype/Person");
+        TopicType personType = dms.getTopicType("de/deepamehta/core/topictype/Person", null);   // clientContext=null
         // Note: these 5 properties are shared between "Person" and "Institution" topic types.
         // We go only through the Person type here. So, the properties are up-to-date in DB,
         // but not in the type cache. Workaround: after updating restart DeepaMehta.
